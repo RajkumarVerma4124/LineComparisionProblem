@@ -41,24 +41,9 @@ namespace LineComparisionProblem
             secLength = Math.Sqrt(Math.Pow(x4 - x3, 2) + Math.Pow(y4 - y3, 2));
             Console.WriteLine("Second Length is : " + Math.Round(secLength, 2));
 
-            //Checking the equality of two lines(UC2)
-            Console.Write("Using Equals Method :- ");
-            if (firstLength.Equals(secLength))
-                Console.Write("The length of the line is equal");
-            else
-                Console.Write("The length of the line is not equal");
-            Console.ReadLine();
-
-            //Comparing the two lines using compare(UC3)
-            int diffLength = firstLength.CompareTo(secLength);
-            Console.Write("\nUsing CompareTo Method :- ");
-            if (diffLength == 0)
-                Console.Write("Lines are equal in length");
-            else if (diffLength > 0)
-                Console.Write("First line is greater in length compare to second line");
-            else
-                Console.Write("First line is smaller in length compare to second line");
-            Console.ReadLine();
+            //Using Java Object Oriented Programming Concepts(UC4)
+            EqualLine.CheckLines(firstLength, secLength);
+            CompareLine.CheckLines(secLength, secLength);
         }
     }
 }
